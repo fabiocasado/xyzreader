@@ -37,7 +37,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/detail_card_top_margin"
                 android:background="#fff"
-                android:elevation="2dp"
+                app:elevation="2dp"
                 android:maxWidth="@dimen/detail_card_max_width"
                 android:orientation="vertical">
 
@@ -62,7 +62,6 @@
                         android:fontFamily="sans-serif-condensed"
                         android:lineSpacingMultiplier="0.9"
                         android:paddingBottom="@dimen/detail_metabar_title_bottom_padding"
-                        android:textSize="@dimen/detail_title_text_size"
                         android:textStyle="bold" />
 
                     <TextView
@@ -81,8 +80,7 @@
                     android:layout_marginRight="@dimen/detail_inner_horiz_margin"
                     android:lineSpacingMultiplier="@fraction/detail_body_line_spacing_multiplier"
                     android:paddingBottom="@dimen/detail_body_bottom_margin"
-                    android:textColorLink="@color/accent"
-                    android:textSize="@dimen/detail_body_text_size" />
+                    android:textColorLink="@color/accent" />
 
             </com.example.xyzreader.ui.MaxWidthLinearLayout>
         </FrameLayout>
@@ -94,11 +92,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
 
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/fab_margin"
         android:src="@drawable/ic_share"
 
-        app:elevation="6dp"
+        app:elevation="@dimen/fab_elevation"
         app:fabSize="normal"
-        app:pressedTranslationZ="12dp"/>
+        app:pressedTranslationZ="@dimen/fab_press_translation_z"/>
 
 </com.example.xyzreader.ui.DrawInsetsFrameLayout>
